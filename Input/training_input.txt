@@ -1,0 +1,1 @@
+hello, I am an input test file used for training input.  This fuzzer has not only the ability to employ standard file corruption mechanisms, but employs markov chaining to corrupt structures within the file based on their probability of occurrence.  It contains a training phase, by which we can train the system from multiple files if necessary.
