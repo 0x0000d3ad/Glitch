@@ -18,9 +18,16 @@ import hashlib
 import os
 import shutil
 
-root_dir = "<output directory>"
-output_dir = os.path.join( root_dir, "output" )
+root_dir = "."
+output_dir = os.path.join( root_dir, "Output" )
 target_dir = os.path.join( root_dir, "final" )
+
+for d in [ output_dir, target_dir ] :
+    if not os.exists( d ) :
+        try :
+            os.mkdir( d ) 
+        except Exception as e :
+            pass
 
 if __name__ == "__main__" :
 
